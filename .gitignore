@@ -1,0 +1,8 @@
+# Ignore all Eclipse IDE related files
+.project
+.classpath
+.settings
+.idea
+DSandALGOProblems.iml
+out/
+bin/
