@@ -1,4 +1,4 @@
-package arrayproblems;
+package dsandalgos.arrays.arrayproblems;
 
 import dsandalgos.sorting.mergesort.MergeSort;
 

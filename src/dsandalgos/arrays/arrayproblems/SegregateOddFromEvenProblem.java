@@ -1,4 +1,4 @@
-package arrayproblems;
+package dsandalgos.arrays.arrayproblems;
 
 import java.util.ArrayList;
 import java.util.Scanner;
