@@ -1,4 +1,4 @@
-package linkedlistproblems.examples.addTwoNums;
+package dsandalgos.linkedlists.linkedlistproblems.examples.addTwoNums;
 
 /**
  * 

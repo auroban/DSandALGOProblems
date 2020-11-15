@@ -1,4 +1,4 @@
-package linkedlistproblems.randoms;
+package dsandalgos.linkedlists.linkedlistproblems.randoms;
 
 public class AddTwoNumbersInReverseOrder {
 	

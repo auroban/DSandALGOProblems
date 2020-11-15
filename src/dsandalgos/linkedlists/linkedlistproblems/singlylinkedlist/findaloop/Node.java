@@ -1,4 +1,4 @@
-package linkedlistproblems.singlylinkedlist.findaloop;
+package dsandalgos.linkedlists.linkedlistproblems.singlylinkedlist.findaloop;
 
 class Node {
 

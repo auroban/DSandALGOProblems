@@ -1,4 +1,4 @@
-package linkedlistproblems.doublylinkedlist;
+package dsandalgos.linkedlists.linkedlistproblems.doublylinkedlist;
 
 import java.util.ArrayList;
 import java.util.Scanner;

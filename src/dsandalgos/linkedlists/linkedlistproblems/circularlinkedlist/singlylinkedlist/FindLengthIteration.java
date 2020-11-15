@@ -1,4 +1,4 @@
-package linkedlistproblems.circularlinkedlist.singlylinkedlist;
+package dsandalgos.linkedlists.linkedlistproblems.circularlinkedlist.singlylinkedlist;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -6,9 +6,10 @@ import java.util.Scanner;
 import dsandalgos.linkedlists.circularlinkedlists.circularsingly.CircularSinglyLinkedList;
 import dsandalgos.linkedlists.circularlinkedlists.circularsingly.Node;
 
-public class FindLengthRecursive {
+public class FindLengthIteration {
 
 	public static void main(String[] args) {
+
 		System.out.println("Please enter the elements into the LinkedList:\t");
 		ArrayList<Integer> itemList = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
@@ -17,17 +18,22 @@ public class FindLengthRecursive {
 		scanner.close();
 		CircularSinglyLinkedList<Integer> linkedList = new CircularSinglyLinkedList<>(itemList);
 		Node<Integer> head = linkedList.getHead();
-		int length = 0;
-		if (head != null) {
-			length = findLength(head, head.getNext(), ++length);
-		}
-		System.out.println("The Length is:\t" + length);
+		System.out.println("Length of the LinkedList:\t" + findLength(head));
 	}
 
-	private static int findLength(Node<Integer> head, Node<Integer> node, int length) {
-		if (node != null && node != head)
-			length = findLength(head, node.getNext(), ++length);
-		return length;
+	private static int findLength(Node<Integer> head) {
+		int length = 0;
+		if (head == null)
+			return length;
+		else {
+			Node<Integer> node = head.getNext();
+			length++;
+			while (node != null && node != head) {
+				length++;
+				node = node.getNext();
+			}
+			return length;
+		}
 	}
 
 }
