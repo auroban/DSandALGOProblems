@@ -6,6 +6,17 @@ import dsandalgos.trees.binarytree.Node;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * URL: https://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/
+ * Idea is to to a POST-ORDER traversal.
+ * Maintain a list that will always contain the nodes of the current path being traversed
+ * Add the current Node being visited to the list
+ * Pass that list to the next recursive calls for its left and right child
+ * Once the recursive calls return, run through the loop, starting from the end and keep a sum variable
+ * Whenever the sum = k, print the elements from the end of the list till the ith index in the list for which sum = k
+ * Remove the node itself from the list
+ */
+
 class Driver {
 
     public static void main(String[] args) {
